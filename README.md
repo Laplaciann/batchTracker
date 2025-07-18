@@ -11,7 +11,7 @@ Generates a unique QR code per batch containing:
 - Vehicle Number
 ### 🔹 View Database
 - Displays saved batches
-- Each entry shows:
+Each entry shows:
  - Batch info
  - QR code
  - Download All as CSV option (platform-specific)
@@ -20,7 +20,7 @@ Generates a unique QR code per batch containing:
 - Special QR codes for these trigger logging
 ### 🔹 Monitor (Scan Logger)
 - Fetches real-time scan logs from backend
-- Displays:
+Displays:
  - IP Address
  - Location (City, Region, Country)
  - Timestamp
@@ -35,13 +35,13 @@ Generates a unique QR code per batch containing:
 - QR code generation
 - IP/location-based logging links for Code Blue QR codes
 ### 🔹 Backend (FastAPI on Render)
-- /scan/<batchID> route:
+/scan/<batchID> route:
  - Logs IP & geolocation via IPinfo.io
  - Writes to a connected Google Sheet using a published Apps Script webhook
-- /scanlogs route:
+/scanlogs route:
  - Fetches scan logs in JSON format for frontend
 ### 🔹 Logging Backend (Google Sheets)
-- Stores logs as:
+Stores logs as:
  - Timestamp
  - Batch ID
  - IP Address
@@ -63,13 +63,13 @@ Displays latest entries.
 - All logs stored securely in your controlled Google Sheet.
 
 ## Deployment
-### Backend (FastAPI on Render)
-1. Deploy main.py FastAPI backend
-2. Set environment variable: GOOGLE_SCRIPT_URL = Your Apps Script Webhook URL
+### Backend (Render)
+1. Deploy index.js render backend
+2. Set environment variable: GOOGLE_SCRIPT_URL = (https://script.google.com/macros/s/AKfycbwTDDZBmwX-d3B-Ep56dxWOBbe0fTlBwSjuXEMw16xR85EKs9xD6CxrY6jtNbdGID4Fjw/exec)
 ### Flutter Frontend
-1. Run on mobile (flutter run)
+1. Run on mobile (NFL application)
 2. Or build for web (flutter build web)
-3. Host via Firebase, GitHub Pages, or a local server
+3. Host via Render, GitHub Pages, or a local server
 
 ## Folder Structure (Frontend)
 lib/
