@@ -2,23 +2,23 @@
 A full-stack application to track and monitor fertilizer batch movements via QR codes, with real-time scan logging (IP + geolocation), Code Blue alerts, and a Google Sheets-backed monitoring system.
 
 ## 🧩 Features
-### Batch QR Generator
+### 🔹 Batch QR Generator
 Generates a unique QR code per batch containing:
 - Batch ID
 - Production Date
 - Plant Location
 - Product Type
 - Vehicle Number
-### View Database
+### 🔹 View Database
 - Displays saved batches
 - Each entry shows:
  - Batch info
  - QR code
  - Download All as CSV option (platform-specific)
-### Code Blue
+### 🔹 Code Blue
 - Mark critical or sensitive batches as Code Blue
 - Special QR codes for these trigger logging
-### Monitor (Scan Logger)
+### 🔹 Monitor (Scan Logger)
 - Fetches real-time scan logs from backend
 - Displays:
  - IP Address
@@ -74,9 +74,13 @@ Displays latest entries.
 ## Folder Structure (Frontend)
 lib/
 ├── main.dart
+
 ├── qr_generator.dart
+
 ├── batch_database.dart
+
 ├── code_blue.dart
+
 ├── monitor.dart
 
 ## Future Enhancements
