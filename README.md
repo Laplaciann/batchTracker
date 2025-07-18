@@ -73,6 +73,7 @@ Displays latest entries.
 
 ## Folder Structure (Frontend)
 lib/
+
 ├── main.dart
 
 ├── qr_generator.dart
