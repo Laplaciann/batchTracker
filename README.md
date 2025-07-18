@@ -65,7 +65,7 @@ Displays latest entries.
 ## Deployment
 ### Backend (Render)
 1. Deploy index.js render backend
-2. Set environment variable: GOOGLE_SCRIPT_URL = (https://script.google.com/macros/s/AKfycbwTDDZBmwX-d3B-Ep56dxWOBbe0fTlBwSjuXEMw16xR85EKs9xD6CxrY6jtNbdGID4Fjw/exec)
+2. Set environment variable: GOOGLE_SCRIPT_URL = (https://script.google.com/macros/s/AKfycbwTDDZBmwX-d3B-Ep56dxWOBbe0fTlBwSjuXEMw16xR85EKs9xD6CxrY6jtNbdGID4Fjw/exec?action=scanlogs)
 ### Flutter Frontend
 1. Run on mobile (NFL application)
 2. Or build for web (flutter build web)
